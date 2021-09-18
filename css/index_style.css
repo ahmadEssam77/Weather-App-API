@@ -4,6 +4,127 @@
     box-sizing: border-box;
 }
 
+/* =============== Nav Section =============== */
 nav {
     background-color: #1e202b;
+}
+
+nav ul {
+    display: flex;  
+}
+
+nav ul a {
+    border: 1.7px solid #1e202b;
+    padding: 3px 15px;
+    border-radius: 15px;
+    margin: 0 15px;
+    transition: all 0.3s;
+}
+
+nav ul .active {
+    border: 1.7px solid #009ad8;
+    padding: 3px 15px;
+    border-radius: 15px;
+    color: #009ad8 !important;
+}
+
+nav ul a:hover {
+    border-color:#009ad8;
+    color: #009ad8 !important;
+}
+
+nav .hamburgerMenu-wrapper {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #1e202b;
+    border-radius: 50%;
+    display: none;
+    transition: all 0.3s;
+}
+
+nav .hamburgerMenu {
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+    position: relative;
+    left: 28.5%;  
+    top: 30%;
+}
+
+nav .hamburgerMenu::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+    top: 250%;
+}
+
+nav .hamburgerMenu::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+    top: 500%;
+}
+
+nav .hamburgerMenu-wrapper:hover {
+    border-color: #009ad8;
+    cursor: pointer;
+}
+
+/* =============== Banner and search bar section =============== */
+#banner {
+    background-image: url(../images/Tokyo_Adobe.jpg);
+    background-size: cover;
+    /* filter:brightness(50%); */
+    max-height: 350px;
+}
+
+#banner #search-bar {
+    border-radius: 20px !important;
+}
+
+#banner #find-btn {
+    position: absolute;
+    top: 5%;
+    right: 0.2%;
+    border-radius: 35px !important;
+    padding: 6px 35px;
+    background-color: #009ad8;
+    color: #fff;
+}
+
+#banner .my-header {
+    background-color: #2D303D;
+}
+
+#banner .my-unique-header {
+    background-color: #222530;
+}
+
+#banner .my-body {
+    background-color: #323544;
+}
+
+#banner .my-unique-body {
+    background-color: #262936;
+}
+
+
+/* =============== Media Query =============== */
+@media screen and (max-width: 978px) {
+    nav ul {
+        display: none;
+    }
+
+    nav .hamburgerMenu-wrapper {
+        display: block;
+    }
+
+    nav .container {
+        width: 90% !important;
+        margin: auto !important;
+    }
 }
