@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/index_style.css">
     <title>Weather App || API</title>
 </head>
@@ -44,51 +45,72 @@
         <!-- =============== Search bar =============== -->
         <div class="container py-5">
             <div class="position-relative">
-                <input id="search-bar" type="search" name="" class="form-control py-2" placeholder="Find your location..." />
-                <button id="find-btn" class="btn">Find</button>
+                <input type="search" name="" class="form-control py-2 search-bar"
+                    placeholder="Find your location..." />
+                <button class="btn find-btn">Find</button>
             </div>
         </div>
         <!-- =============== API || Weather section =============== -->
         <div class="container py-5">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 my-2">
                     <div class="my-header d-flex justify-content-between text-muted px-2 pt-2">
                         <p>Saturday</p>
                         <p>18September</p>
                     </div>
-                    <div class="my-body p-4">
+                    <div class="my-body p-4 h-100">
                         <h4 class="text-muted">Cairo</h4>
                         <h1 class="text-white">29<sup>o</sup>C</h1>
                         <p class="text-primary">Partly Cloudy</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="my-unique-header">
-                        <p>Sunday</p>
+                <div class="col-md-4 my-2">
+                    <div class="my-unique-header px-2 py-1">
+                        <p class="text-muted">Sunday</p>
                     </div>
-                    <div class="my-unique-body">
-                        <div><i class="fas fa-facebbok"></i></div>
-                        <h2>39.9<sup>o</sup>C</h2>
-                        <p>22.3<sup>o</sup></p>
-                        <p>Sunny</p>
+                    <div class="my-unique-body p-4 h-100">
+                        <!-- <div><span>Image</span></div> -->
+                        <h2 class="text-white">39.9<sup>o</sup>C</h2>
+                        <p class="text-muted">22.3<sup>o</sup></p>
+                        <p class="text-primary">Sunny</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="my-header">
-                        <p>Monday</p>
+                <div class="col-md-4 my-2">
+                    <div class="my-header px-2 py-1">
+                        <p class="text-muted">Monday</p>
                     </div>
-                    <div class="my-body">
-                        <div><i class="fas fa-facebbok"></i></div>
-                        <h2>41.8<sup>o</sup>C</h2>
-                        <p>23.1<sup>o</sup></p>
-                        <p>Partly Cloudy</p>
+                    <div class="my-body p-4 h-100">
+                        <!-- <div><span>Image</span></div> -->
+                        <h2 class="text-white">41.8<sup>o</sup>C</h2>
+                        <p class="text-muted">23.1<sup>o</sup></p>
+                        <p class="text-primary">Partly Cloudy</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     
+    <!-- =============== Temporary Class =============== -->
+    <div class="breacker">
+
+    </div>
+
+    <!-- =============== Footer =============== -->
+    <footer>
+        <div class="container py-5">
+            <div>
+                <div class="footer-search position-relative">
+                    <input type="search" name="" class="form-control py-2 search-bar"
+                        placeholder="Enter your email to subscribe..." />
+                    <button class="btn find-btn">Find</button>
+                </div>
+                <div class="footer-sm-icons">
+                    <i class="fab fa-facebook text-white"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
 
 

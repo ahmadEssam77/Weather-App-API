@@ -74,19 +74,12 @@ nav .hamburgerMenu-wrapper:hover {
     cursor: pointer;
 }
 
-/* =============== Banner and search bar section =============== */
-#banner {
-    background-image: url(../images/Tokyo_Adobe.jpg);
-    background-size: cover;
-    /* filter:brightness(50%); */
-    max-height: 350px;
-}
-
-#banner #search-bar {
+/* =============== Global Style =============== */
+.search-bar {
     border-radius: 20px !important;
 }
 
-#banner #find-btn {
+.find-btn {
     position: absolute;
     top: 5%;
     right: 0.2%;
@@ -94,6 +87,14 @@ nav .hamburgerMenu-wrapper:hover {
     padding: 6px 35px;
     background-color: #009ad8;
     color: #fff;
+}
+
+/* =============== Banner and search bar section =============== */
+#banner {
+    background-image: url(../images/Tokyo_Adobe.jpg);
+    background-size: cover;
+    /* filter:brightness(50%); */
+    max-height: 350px;
 }
 
 #banner .my-header {
@@ -112,6 +113,21 @@ nav .hamburgerMenu-wrapper:hover {
     background-color: #262936;
 }
 
+#banner .row > * {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* =============== Temporary class ===============  */
+.breacker {
+    background-color: #1E202B;
+    min-height: 250px;
+}
+
+/* =============== Footer =============== */
+footer {
+    background-color: #262936;
+}
 
 /* =============== Media Query =============== */
 @media screen and (max-width: 978px) {
