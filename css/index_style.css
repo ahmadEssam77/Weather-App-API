@@ -94,7 +94,7 @@ nav .hamburgerMenu-wrapper:hover {
     background-image: url(../images/Tokyo_Adobe.jpg);
     background-size: cover;
     /* filter:brightness(50%); */
-    max-height: 350px;
+    /* min-height: 350px; */
 }
 
 #banner .my-header {
@@ -111,17 +111,6 @@ nav .hamburgerMenu-wrapper:hover {
 
 #banner .my-unique-body {
     background-color: #262936;
-}
-
-#banner .row > * {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-
-/* =============== Temporary class ===============  */
-.breacker {
-    background-color: #1E202B;
-    min-height: 250px;
 }
 
 /* =============== Footer =============== */
