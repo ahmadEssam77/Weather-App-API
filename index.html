@@ -32,7 +32,7 @@
                 <li><a href="#" class="text-decoration-none text-white ">News</a></li>
                 <li><a href="#" class="text-decoration-none text-white ">Live Cameras</a></li>
                 <li><a href="#" class="text-decoration-none text-white ">Photos</a></li>
-                <li><a href="#" id="contactLink" class="text-decoration-none text-white ">Contact</a></li>
+                <li><a href="contact.html" id="contactLink" class="text-decoration-none text-white ">Contact</a></li>
             </ul>
             <div class="hamburgerMenu-wrapper">
                 <div class="hamburgerMenu"></div>
@@ -55,18 +55,18 @@
             <div class="row g-0 py-5">
                 <div class="col-md-4 my-2">
                     <div class="my-header d-flex justify-content-between text-muted px-2 pt-2">
-                        <p>Saturday</p>
+                        <p id="weekDay"></p>
                         <p>18September</p>
                     </div>
                     <div class="my-body p-4 h-100">
-                        <h4 class="text-muted">Cairo</h4>
+                        <h4 id="countryName" class="text-muted"></h4>
                         <h1 class="text-white">29<sup>o</sup>C</h1>
                         <p class="text-primary">Partly Cloudy</p>
                     </div>
                 </div>
                 <div class="col-md-4 my-2">
                     <div class="my-unique-header px-2 py-1">
-                        <p class="text-muted">Sunday</p>
+                        <p id="weekDayNext" class="text-muted"></p>
                     </div>
                     <div class="my-unique-body p-4 h-100">
                         <!-- <div><span>Image</span></div> -->
@@ -77,7 +77,7 @@
                 </div>
                 <div class="col-md-4 my-2">
                     <div class="my-header px-2 py-1">
-                        <p class="text-muted">Monday</p>
+                        <p id="weekDayAfterNext"class="text-muted"></p>
                     </div>
                     <div class="my-body p-4 h-100">
                         <!-- <div><span>Image</span></div> -->
@@ -93,15 +93,25 @@
     <!-- =============== Footer =============== -->
     <footer>
         <div class="container py-5">
+            <div class="row">
+                <div class="col-md-8 mb-5">
+                    <div class="footer-search position-relative">
+                        <input type="search" name="" class="form-control py-2 search-bar"
+                            placeholder="Enter your email to subscribe..." />
+                        <button class="btn find-btn">Find</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-sm-icons d-flex justify-content-evenly">
+                        <div><i class="fab fa-facebook text-white"></i></div>
+                        <div><i class="fab fa-twitter text-white"></i></div>
+                        <div><i class="fab fa-google-plus-g text-white"></i></div>
+                        <div><i class="fab fa-pinterest text-white"></i></div>
+                    </div>
+                </div>
+            </div>
             <div>
-                <div class="footer-search position-relative">
-                    <input type="search" name="" class="form-control py-2 search-bar"
-                        placeholder="Enter your email to subscribe..." />
-                    <button class="btn find-btn">Find</button>
-                </div>
-                <div class="footer-sm-icons">
-                    <i class="fab fa-facebook text-white"></i>
-                </div>
+                <p class="text-white pt-4 text-center">Copyright &copy; 2021 aEssamCode. Designed by Ahmad Essam. All rights reserved</p>
             </div>
         </div>
     </footer>
@@ -110,6 +120,7 @@
 
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
     <script src="js/main.js"></script>
 </body>
 
