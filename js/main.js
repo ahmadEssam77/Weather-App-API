@@ -19,6 +19,7 @@ http.addEventListener('readystatechange', function () {
         // =============== Invoking ===============
         displayCountryName();
         displayFullTime();
+        weatherCondition();
     }
 });
 
@@ -33,9 +34,16 @@ function displayFullTime() {
     let weekDay = document.getElementById('weekDay');
     let weekDayNext = document.getElementById('weekDayNext');
     let weekDayAfterNext = document.getElementById('weekDayAfterNext');
-    let myFullTime = JSON.parse(http.response).location.localtime;
-    let d = new Date(myFullTime);
 
+    let theActualDay = document.getElementById('theActualDay');
+    let theMonth = document.getElementById('theMonth');
+
+    let myFullTime = JSON.parse(http.response).location.localtime;  // Get the time from API
+    let d = new Date(myFullTime);   // Convert it to a date
+
+    theActualDay.innerHTML = d.getDate();  // Set the day here in number 1 => 31
+
+    // Days
     switch (d.getDay()) {
         case 0:
             weekDay.innerHTML = "Sunday";
@@ -77,7 +85,62 @@ function displayFullTime() {
             weekDayNext.innerHTML = "Not a day";
             weekDayAfterNext.innerHTML = "Not a day";
     }
+
+
+    // Months
+    switch (d.getMonth()) {
+        case 0:
+            theMonth.innerHTML = "January";
+            break;
+        case 1:
+            theMonth.innerHTML = "February";
+            break;
+        case 2:
+            theMonth.innerHTML = "March";
+            break;
+        case 3:
+            theMonth.innerHTML = "April";
+            break;
+        case 4:
+            theMonth.innerHTML = "May";
+            break;
+        case 5:
+            theMonth.innerHTML = "June";
+            break;
+        case 6:
+            theMonth.innerHTML = "July";
+            break;
+        case 7:
+            theMonth.innerHTML = "August";
+            break;
+        case 8:
+            theMonth.innerHTML = "September";
+            break;
+        case 9:
+            theMonth.innerHTML = "October";
+            break;
+        case 10:
+            theMonth.innerHTML = "November";
+            break;
+        case 11:
+            theMonth.innerHTML = "December";
+            break;
+        default:
+            theMonth.innerHTML = "Not a month";
+
+    }
 }
+
+// =============== Display Weather Condition ===============
+function weatherCondition() {
+    let weatherCondition1 = document.getElementById('weatherCondition1');
+    weatherCondition1.innerHTML = JSON.parse(http.response).forecast.forecastday[0].day.condition.text;
+    let weatherCondition2 = document.getElementById('weatherCondition2');
+    weatherCondition2.innerHTML = JSON.parse(http.response).forecast.forecastday[1].day.condition.text;
+    let weatherCondition3 = document.getElementById('weatherCondition3');
+    weatherCondition3.innerHTML = JSON.parse(http.response).forecast.forecastday[2].day.condition.text;
+}
+
 
 
 
