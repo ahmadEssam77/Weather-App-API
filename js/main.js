@@ -20,6 +20,7 @@ http.addEventListener('readystatechange', function () {
         displayCountryName();
         displayFullTime();
         weatherCondition();
+        // displayIcons();
     }
 });
 
@@ -141,6 +142,19 @@ function weatherCondition() {
     weatherCondition3.innerHTML = JSON.parse(http.response).forecast.forecastday[2].day.condition.text;
 }
 
+// =============== Display Temperatures ===============
+// function getTemp() {
+
+// }
+
+
+// =============== Display Icons ===============
+// function displayIcons() {
+//     let icon2 = document.getElementById('icon2');
+//     let iconSrcAPI = JSON.parse(http.response).forecast.forecastday[2].day.condition.icon;
+//     console.log(iconSrcAPI);
+//     icon2.setAttribute('src', iconSrcAPI);
+// }
 
 
 

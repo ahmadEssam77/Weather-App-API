@@ -76,25 +76,27 @@ nav .hamburgerMenu-wrapper:hover {
 
 /* =============== Global Style =============== */
 .search-bar {
-    border-radius: 20px !important;
+    border-radius: 30px !important;
+    background-color: #1e202b;
+    border: 1px solid #1e202b;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
 }
 
 .find-btn {
     position: absolute;
     top: 5%;
-    right: 0.2%;
+    right: 0.3%;
     border-radius: 35px !important;
-    padding: 6px 35px;
+    padding: 12px 35px;
     background-color: #009ad8;
     color: #fff;
 }
 
 /* =============== Banner and search bar section =============== */
 #banner {
-    background-image: url(../images/Tokyo_Adobe.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/Tokyo_Adobe.jpg);
     background-size: cover;
-    /* filter:brightness(50%); */
-    /* min-height: 350px; */
 }
 
 #banner .my-header {
@@ -116,6 +118,24 @@ nav .hamburgerMenu-wrapper:hover {
 /* =============== Footer =============== */
 footer {
     background-color: #262936;
+}
+
+.footer-sm-icons a {
+    padding: 7px;
+    border-radius: 50%;
+    background-color: #1e202b;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;  
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    color: #009ad8;
+}
+
+.footer-sm-icons a:hover {
+    background-color: #009ad8;
+    color: #fff;
 }
 
 /* =============== Media Query =============== */
